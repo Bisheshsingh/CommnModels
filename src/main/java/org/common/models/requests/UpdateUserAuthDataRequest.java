@@ -1,13 +1,11 @@
 package org.common.models.requests;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.common.models.types.Request;
 
-@Builder
-@Getter
-@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+@Data
 public final class UpdateUserAuthDataRequest extends Request {
     private final String userId;
     private final String userFirstName;
