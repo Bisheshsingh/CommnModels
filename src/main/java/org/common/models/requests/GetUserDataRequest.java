@@ -6,6 +6,6 @@ import org.common.models.types.Request;
 
 @Builder
 @Getter
-public final class GetUserAuthDataRequest extends Request {
+public final class GetUserDataRequest extends Request {
     private final String userId;
 }

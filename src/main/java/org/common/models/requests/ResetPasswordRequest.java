@@ -8,4 +8,5 @@ import org.common.models.types.Request;
 @Getter
 public final class ResetPasswordRequest extends Request {
     private final String userId;
+    private final transient String password;
 }
